@@ -1,0 +1,53 @@
+[33mcommit cd4d3d7c99fecb6a67351ce120a8172d86bc3214[m
+Author: Sidoline Abwenek <akwentingeabweneksidoline@gmail.com>
+Date:   Wed Sep 2 17:48:17 2026 +0100
+
+    my fourth project on render
+
+ .gitattributes                                     |   2 [32m+[m
+ .gitignore                                         |  33 [32m+++[m
+ .mvn/wrapper/maven-wrapper.properties              |   3 [32m+[m
+ Dockerfile                                         |  25 [32m++[m
+ mvnw                                               | 295 [32m+++++++++++++++++++++[m
+ mvnw.cmd                                           | 189 [32m+++++++++++++[m
+ pom.xml                                            | 138 [32m++++++++++[m
+ .../VigieCam/Config/ModeratorProperties.java       |  22 [32m++[m
+ .../VigieCam/Controller/CategoryController.java    | 128 [32m+++++++++[m
+ .../VigieCam/Controller/IncidentController.java    | 153 [32m+++++++++++[m
+ .../VigieCam/Controller/ModeratorController.java   | 201 [32m++++++++++++++[m
+ .../VigieCam/Controller/UserController.java        |  70 [32m+++++[m
+ .../example/VigieCam/Dto/CategoryRequestDto.java   |  37 [32m+++[m
+ .../example/VigieCam/Dto/CategoryResponseDto.java  |  33 [32m+++[m
+ .../example/VigieCam/Dto/IncidentRequestDto.java   |  78 [32m++++++[m
+ .../example/VigieCam/Dto/IncidentResponseDto.java  |  71 [32m+++++[m
+ .../VigieCam/Dto/IncidentStatusUpdateDto.java      |  44 [32m+++[m
+ .../VigieCam/Dto/IncidentTrackingResponseDto.java  |  52 [32m++++[m
+ .../example/VigieCam/Dto/UserResponseDto.java      |  54 [32m++++[m
+ .../example/VigieCam/Enums/IncidentKind.java       |   6 [32m+[m
+ .../example/VigieCam/Enums/IncidentStatus.java     |   9 [32m+[m
+ .../Mbemlevel/example/VigieCam/Enums/Role.java     |   6 [32m+[m
+ .../example/VigieCam/Mapper/CategoryMapper.java    |  31 [32m+++[m
+ .../example/VigieCam/Mapper/IncidentMapper.java    |  54 [32m++++[m
+ .../VigieCam/Mapper/IncidentTrackingMapper.java    |  34 [32m+++[m
+ .../example/VigieCam/Mapper/UserMapper.java        |  25 [32m++[m
+ .../Mbemlevel/example/VigieCam/Model/Category.java |  59 [32m+++++[m
+ .../Mbemlevel/example/VigieCam/Model/Incident.java | 181 [32m+++++++++++++[m
+ .../example/VigieCam/Model/IncidentTracking.java   |  99 [32m+++++++[m
+ .../Mbemlevel/example/VigieCam/Model/User.java     |  89 [32m+++++++[m
+ .../OAuth2UserService/CustomOAuth2UserService.java |  75 [32m++++++[m
+ .../VigieCam/Repository/CategoryRepository.java    |  10 [32m+[m
+ .../VigieCam/Repository/IncidentRepository.java    |  20 [32m++[m
+ .../Repository/IncidentTrackingRepository.java     |  17 [32m++[m
+ .../VigieCam/Repository/UserRepository.java        |  15 [32m++[m
+ .../VigieCam/SecurityConfig/SecurityConfig.java    |  67 [32m+++++[m
+ .../Services/AuthenticatedUserServices.java        |  63 [32m+++++[m
+ .../VigieCam/Services/CategoryServices.java        |  84 [32m++++++[m
+ .../VigieCam/Services/IncidentServices.java        | 106 [32m++++++++[m
+ .../Services/IncidentTrackingServices.java         |  93 [32m+++++++[m
+ .../example/VigieCam/Services/UserServices.java    |  41 [32m+++[m
+ .../example/VigieCam/VigieCamApplication.java      |  16 [32m++[m
+ src/main/resources/ application-prod.yml           |  33 [32m+++[m
+ src/main/resources/application-dev.yml             |  33 [32m+++[m
+ src/main/resources/application.yaml                |   3 [32m+[m
+ .../example/VigieCam/VigieCamApplicationTests.java |  13 [32m+[m
+ 46 files changed, 2910 insertions(+)
