@@ -1,42 +1,9 @@
 spring:
   datasource:
-    url: jdbc:postgresql://aws-1-eu-west-1.pooler.supabase.com:6543/postgres?user=postgres.luwbjhzobklcbbheunmm&password=Sidolin%40199
-    username: postgres.luwbjhzobklcbbheunmm
-    password: YOUR_PASSWORD
+    url: jdbc:postgresql://localhost:5432/vigiecam
+    username: postgres
+    password: Sandra@1996
     driver-class-name: org.postgresql.Driver
 
     hikari:
       maximum-pool-size: 5
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        temp:
-          use_jdbc_metadata_defaults: false
-
-  security:
-    oauth2:
-      client:
-        registration:
-          google:
-            client-id: ${GOOGLE_CLIENT_ID}
-            client-secret: ${GOOGLE_CLIENT_SECRET}
-            scope:
-              - openid
-              - profile
-              - email
-
-
-            server:
-              port: ${PORT:8080}
-
-moderators:
-  emails:
-    - victoriaashfordthorne@gmail.com
-
-
