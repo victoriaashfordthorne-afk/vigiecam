@@ -1,13 +1,4 @@
 spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-
   security:
     oauth2:
       client:
@@ -19,10 +10,3 @@ spring:
               - openid
               - profile
               - email
-
-server:
-  port: ${PORT:8080}
-
-moderators:
-  emails:
-    - victoriaashfordthorne@gmail.com
